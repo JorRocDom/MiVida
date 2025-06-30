@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta de amor para Eva</title>
+</head>
+
+<body>
+    <h1>1 año juntos ya... ❤️</h1>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Eva,</strong>
+                        <p>
+                            Hoy no es un día cualquiera. Hoy celebramos algo que no todos pueden decir:
+                            <strong>un año de amor, locuras y aventuras</strong>.
+                            Si alguien me hubiera dicho hace un tiempo que acabaría tan enganchado a una persona como lo
+                            estoy contigo, le habría dicho que es imposible, pero bueno, aquí estoy haciendo esta carta.
+                            <br><br>
+                            No ha sido siempre fácil, eso lo sabemos los dos. Hemos tenido momentos difíciles,
+                            discusiones (algunas un tanto curiosas), pero también hemos sabido crecer, reírnos,
+                            pedir perdón y abrazarnos ante cualquier dificultad.
+                            Eso, para mí, es el verdadero amor: no solo quererse cuando todo va bien, sino que cuando
+                            las cosas se ponen complicadas saber que nos tenemos el uno al otro para lo que necesitemos.
+                            <br><br>
+                            Gracias por hacerme reír cuando más lo necesito, por tener paciencia cuando hago el gilipollas y por
+                            abrazarme fuerte cuando el mundo pesa.
+                            Gracias por ser tú misma.
+                            <br><br>
+                            Hoy quiero recordarte lo mucho que te amo, lo feliz que me haces y lo contento que me pone el pensar en todo lo que podremos llegar a viv**i**r juntos.
+                            <br><br>
+                            <strong>Te amo</strong>, mucho, mucho, mucho.
+                            Y antes de que contestes, que sepas que yo más.
+                            <br><br>
+                            Eres lo mejor que me ha pasado.
+                            <br>
+                            <code>Jordi,</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+            <div class="tap-right"></div>
+            <div class="tap-left"></div>
+        </div>
+    </div>
+
+    <img src="/assets/images/gnomo.png" alt="Decoración izquierda" class="img-left">
+    <img src="/assets/images/resacon.png" alt="Decoración derecha" class="img-right">
+
+    <div class="contenedor">
+        <div class="card principal" id="card-1" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
+            <div class="card-image" style="background-color: rgb(71, 166, 185);">
+                <img src=""" alt="foto">
+            </div>
+            <div class="card-content">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod mauris bibendum quam bibendum luctus. In sed erat vel arcu rutrum elementum non a turpis. Integer dignissim nisl eget tellus iaculis consectetur.</p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot active-dot" id="dot-1"></span>
+                        <span class="dot" id="dot-2"></span>
+                        <span class="dot" id="dot-3"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="nextCard()" class="next-button">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card siguiente" id="card-2" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
+            <div class="card-image" style="background-color: rgb(211, 212, 217);">
+                <img src="" alt="foto">
+            </div>
+            <div class="card-content">
+                <h3>Título</h3>
+                <p>Proin dolor massa, feugiat sit amet fringilla ac, pellentesque vitae nisl. Curabitur at auctor velit, ut ullamcorper nulla erat id neque. Vestibulum vel sollicitudin lacus.</p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot" id="dot-1-2"></span>
+                        <span class="dot active-dot" id="dot-2-2"></span>
+                        <span class="dot" id="dot-3-2"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="previousCard()" class="previous-button">&#8592;</button>
+                        <button onclick="nextCard()" class="next-button">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card siguiente2" id="card-3" ontouchstart="onTouchStart(event)" ontouchend="onTouchEnd(event)">
+            <div class="card-image" style="background-color: rgb(255, 209, 103);">
+                <img src=""" alt="foto">
+            </div>
+            <div class="card-content">
+                <h3>Título</h3>
+                <p>Proin pellentesque, justo a ornare posuere, justo elit tincidunt mi, a efficitur tellus risus in elit. Aenean et neque metus. Morbi porta viverra tellus, non volutpat lectus tincidunt quis.</p>
+                <div class="card-navigation">
+                    <div>
+                        <span class="dot" id="dot-1-3"></span>
+                        <span class="dot" id="dot-2-3"></span>
+                        <span class="dot active-dot" id="dot-3-3"></span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="previousCard()" class="previous-button">&#8592;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-transparent-previous" class="ocultar" onclick="previousCard()"></div>
+        <div id="div-transparent-next" class="" onclick="nextCard()"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
